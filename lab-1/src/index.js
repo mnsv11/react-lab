@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MainPage from './components/main-page/main-page';
+import Routing from "./components/routing/routing";
 
-ReactDOM.render(<MainPage />, document.getElementById('root'));
+ReactDOM.render(<Routing />, document.getElementById('root'));
 
