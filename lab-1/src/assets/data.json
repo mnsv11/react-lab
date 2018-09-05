@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "name": "Kalle",
+      "surname": "Svensson",
+      "age": "34",
+      "phone": "0703756214",
+      "gender": "Male",
+      "street": "Karlskronagatan",
+      "streetNumber": "23",
+      "city": "Ronneby",
+      "zip": "37237",
+      "country": "Sweden"
+    },
+    {
+      "name": "Maria",
+      "surname": "Nilsson",
+      "age": "29",
+      "phone": "0703534514",
+      "gender": "female",
+      "street": "Ronnebygatan",
+      "streetNumber": "27",
+      "city": "Karlskrona",
+      "zip": "37132",
+      "country": "Sweden"
+    },
+    {
+      "name": "Irene",
+      "surname": "Petersson",
+      "age": "48",
+      "phone": "0703987621",
+      "gender": "female",
+      "street": "Östrahamngatan",
+      "streetNumber": "3",
+      "city": "Karlskrona",
+      "zip": "37132",
+      "country": "Sweden"
+    },
+    {
+      "name": "Peter",
+      "surname": "Hansson",
+      "age": "41",
+      "phone": "0703159856",
+      "gender": "Male",
+      "street": "Regeringsgatan",
+      "streetNumber": "20",
+      "city": "Stockholm",
+      "zip": "10391",
+      "country": "Sweden"
+    }
+  ]
+}
