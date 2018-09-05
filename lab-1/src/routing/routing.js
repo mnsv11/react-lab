@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './routing.scss';
-import MainPage from '../main-page/main-page';
+import MainPage from '../components/main-page/main-page';
+import About from "../components/about/about"
 
 class Routing extends Component {
     render() {
@@ -10,13 +11,13 @@ class Routing extends Component {
                 <div className="menu">
                     <div className="menu-links">
                         <MenuLink activeOnlyWhenExact={true} to="/" label="Home" />
-                        <MenuLink to="/about" label="About" />
                         <MenuLink to="/topics" label="Topics" />
+                        <MenuLink to="/about" label="About" />
                     </div>
 
                     <Route exact path="/" component={MainPage} />
-                    <Route path="/about" component={MainPage} />
                     <Route path="/topics" component={MainPage} />
+                    <Route path="/about" component={About} />
                 </div>
             </Router>
         )
