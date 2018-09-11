@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./table.scss";
+import PropTypes from 'prop-types';
 
 class Table extends Component {
+
 
     render() {
         return (<table className="table">
@@ -14,7 +16,7 @@ class Table extends Component {
                 <th>Gender</th>
             </tr>
             {
-                this.props.data.users.map((user, i) => {
+                this.props.users.map((user, i) => {
                     return this.createUser(user, i);
                 })
             }
@@ -40,5 +42,10 @@ class Table extends Component {
 
 
 }
+
+Table.propTypes = {
+    users: PropTypes.array.isRequired,
+    tableClick: PropTypes.func.isRequired
+};
 
 export default Table;

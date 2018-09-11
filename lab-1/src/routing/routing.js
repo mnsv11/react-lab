@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './routing.scss';
 import MainPage from '../components/main-page/main-page';
 import About from "../components/about/about"
+import PageNotFound from "../components/pageNotFound/pageNotFound"
 
 class Routing extends Component {
     render() {
@@ -18,6 +19,7 @@ class Routing extends Component {
                     <Route exact path="/" component={MainPage} />
                     <Route path="/topics" component={MainPage} />
                     <Route path="/about" component={About} />
+                    <Route component={PageNotFound} />
                 </div>
             </Router>
         )

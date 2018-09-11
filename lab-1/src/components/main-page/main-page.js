@@ -33,7 +33,7 @@ class MainPage extends Component {
                 <header className="mainPage-header">
                     <h1 className="mainPage-title">Users</h1>
                 </header>
-                <Table data={data} tableClick={this.tableClick}/>
+                <Table users={data.users} tableClick={this.tableClick}/>
                 <DetailPage state={this.state} save={this.save} ref={this.detail}/>
             </div>
         );
