@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 class Table extends Component {
 
-
     render() {
         return (<table className="table">
             <tbody>
@@ -17,14 +16,14 @@ class Table extends Component {
             </tr>
             {
                 this.props.users.map((user, i) => {
-                    return this.createUser(user, i);
+                    return this.createRow(user, i);
                 })
             }
             </tbody>
         </table>)
     }
 
-    createUser(user, i) {
+    createRow(user, i) {
         return (
             <tr key={i} onClick={() => {this.tableClick(user ,i);}}>
                 <td>{user.name}</td>

@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "id": 0,
       "name": "Kalle",
       "surname": "Svensson",
       "age": "34",
@@ -13,6 +14,7 @@
       "country": "Sweden"
     },
     {
+      "id": 1,
       "name": "Maria",
       "surname": "Nilsson",
       "age": "29",
@@ -25,6 +27,7 @@
       "country": "Sweden"
     },
     {
+      "id": 2,
       "name": "Irene",
       "surname": "Petersson",
       "age": "48",
@@ -37,6 +40,7 @@
       "country": "Sweden"
     },
     {
+      "id": 3,
       "name": "Peter",
       "surname": "Hansson",
       "age": "41",

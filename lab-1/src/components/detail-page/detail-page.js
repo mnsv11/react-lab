@@ -3,10 +3,6 @@ import "./detail-page.scss";
 import chevron from "../../assets/images/chevron.png";
 
 class DetailPage extends Component {
-    constructor(props) {
-        super(props);
-        this.save = this.save.bind(this);
-    }
 
     render() {
         return (
@@ -20,28 +16,26 @@ class DetailPage extends Component {
                 </div>
                 <div className='details-content'>
                     <div className='details-content-row1'>
-                        <input type="text" name='name' value={this.props.state.name} onChange={this.save}/>
-                        <input type="text" name='surname' value={this.props.state.surname} onChange={this.save}/>
-                        <input type="text" name='age' value={this.props.state.age} onChange={this.save}/>
-                        <input type="text" name='gender' value={this.props.state.gender} onChange={this.save}/>
+                        <input type="text" placeholder='First name' name='name' value={this.props.state.name} onChange={this.props.updateUser}/>
+                        <input type="text" placeholder='Last name' name='surname' value={this.props.state.surname} onChange={this.props.updateUser}/>
+                        <input type="text" placeholder='Age' name='age' value={this.props.state.age} onChange={this.props.updateUser}/>
+                        <input type="text" placeholder='Gender' name='gender' value={this.props.state.gender} onChange={this.props.updateUser}/>
                     </div>
                     <div className='details-content-row2'>
-                        <input type="text" name='street' value={this.props.state.street} onChange={this.save}/>
-                        <input type="text" name='streetNumber' value={this.props.state.streetNumber} onChange={this.save}/>
-                        <input type="text" name='zip' value={this.props.state.zip} onChange={this.save}/>
-                        <input type="text" name='city' value={this.props.state.city} onChange={this.save}/>
+                        <input type="text" placeholder='Street' name='street' value={this.props.state.street} onChange={this.updateUser}/>
+                        <input type="text" placeholder='Street number' name='streetNumber' value={this.props.state.streetNumber} onChange={this.props.updateUser}/>
+                        <input type="text" placeholder='Zip' name='zip' value={this.props.state.zip} onChange={this.props.updateUser}/>
+                        <input type="text" placeholder='City' name='city' value={this.props.state.city} onChange={this.props.updateUser}/>
                     </div>
                     <div className='details-content-row3'>
-                        <input type="text" name='country' value={this.props.state.country} onChange={this.save}/>
-                        <input type="text" name='phone' value={this.props.state.phone} onChange={this.save}/>
+                        <input type="text" placeholder='Country' name='country' value={this.props.state.country} onChange={this.props.updateUser}/>
+                        <input type="text" placeholder='Phone' name='phone' value={this.props.state.phone} onChange={this.props.updateUser}/>
+                        <button className="details-content-row3-button" type='button' onClick={this.props.save}>Save</button>
                     </div>
+
                 </div>
             </div>
         );
-    }
-
-    save(event) {
-        this.props.save(event)
     }
 
     view() {
@@ -49,7 +43,6 @@ class DetailPage extends Component {
     }
 
     close() {
-
         this.refs.details.style.left = "100%";
     }
 }
