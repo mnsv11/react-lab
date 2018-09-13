@@ -4,10 +4,17 @@ import "./input.scss";
 class Input extends Component {
 
     render() {
+
+        let className = '';
+        console.log(this.props.error)
+        if(this.props.error) {
+            className = 'input-error'
+        }
+
         return (
                 <div className='input'>
                     <input
-                        className='input-field'
+                        className={className}
                         type="text"
                         placeholder={this.props.placeholder}
                         name={this.props.name}

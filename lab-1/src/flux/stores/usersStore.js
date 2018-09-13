@@ -22,7 +22,10 @@ class UsersStore extends EventEmitter {
             case ActionTypes.INITIALIZE:
                 this.initializeUserData(action.value);
                 break;
-
+            case ActionTypes.DELETE_USER:
+                this.deleteUser(action.value);
+                break;
+            default:
         }
     }
 
@@ -40,15 +43,23 @@ class UsersStore extends EventEmitter {
     }
 
     updateUser(user) {
-        let userIndex;
-        for (let i= 0; i <_users.length; i++) {
-            if (_users[i].id === user.id) {
-                userIndex = i;
-                break;
-            }
-        }
+        let userIndex = this.getUserIndex(user.id);
         _users.splice(userIndex, 1, user);
         this.emit(CHANGE);
+    }
+
+    deleteUser(id) {
+        let userIndex = this.getUserIndex(id);
+        _users.splice(userIndex, 1);
+        this.emit(CHANGE);
+    }
+
+    getUserIndex(id) {
+        for (let i= 0; i <_users.length; i++) {
+            if (_users[i].id === id) {
+                return i;
+            }
+        }
     }
 
     addChangeListener(callback) {

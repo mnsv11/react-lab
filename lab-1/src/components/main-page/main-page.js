@@ -29,6 +29,7 @@ class MainPage extends Component {
         };
 
         this.save = this.save.bind(this);
+        this.deleteUser = this.deleteUser.bind(this);
         this.updateUser = this.updateUser.bind(this);
         this.tableClick = this.tableClick.bind(this);
         this.addNewUser = this.addNewUser.bind(this);
@@ -45,7 +46,7 @@ class MainPage extends Component {
                     <Table users={this.state.users} tableClick={this.tableClick}/>
                     <button className="mainPage-button" type='button' onClick={this.addNewUser}>Add new user</button>
                 </div>
-                <DetailPage state={this.state.user} updateUser={this.updateUser} save={this.save} errors={this.state.errors} ref={this.detail}/>
+                <DetailPage state={this.state.user} updateUser={this.updateUser} save={this.save} deleteUser={this.deleteUser} errors={this.state.errors} ref={this.detail}/>
             </div>
         );
     }
@@ -102,79 +103,88 @@ class MainPage extends Component {
 
     inputsIsValid() {
         let inputIsValid = true;
-        this.state.errors = {};
+        let messages = {};
+        this.setState({
+            errors: {}
+        });
 
         if (this.state.user.name.length < 3) {
-            this.state.errors.name = "Require at least 3 characters";
+            messages.name = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         if (this.state.user.surname.length < 3) {
-            this.state.errors.surname = "Require at least 3 characters";
+            messages.surname = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         if (!Number(this.state.user.age) > 0) {
-            this.state.errors.age = "Age must be larger then 0";
+            messages.age = "Age must be larger then 0";
             inputIsValid = false;
         }
 
         if (this.state.user.gender.length < 3) {
-            this.state.errors.gender = "Require at least 3 characters";
+            messages.gender = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         if (this.state.user.street.length < 3) {
-            this.state.errors.street = "Require at least 3 characters";
+            messages.street = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         if (!Number(this.state.user.streetNumber) > 0) {
-            this.state.errors.streetNumber = "Street number must be larger then 0";
+            messages.streetNumber = "Street number must be larger then 0";
             inputIsValid = false;
         }
 
         if (this.state.user.zip.length < 3) {
-            this.state.errors.zip = "Require at least 3 characters";
+            messages.zip = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         if (this.state.user.city.length < 3) {
-            this.state.errors.city = "Require at least 3 characters";
+            messages.city = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         if (this.state.user.country.length < 3) {
-            this.state.errors.country = "Require at least 3 characters";
+            messages.country = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         if (this.state.user.phone.length < 3) {
-            this.state.errors.phone = "Require at least 3 characters";
+            messages.phone = "Require at least 3 characters";
             inputIsValid = false;
         }
 
         this.setState({
-            errors: this.state.errors
+            errors: messages
         });
 
         return inputIsValid;
-
     }
 
     save() {
-
         if (!this.inputsIsValid()) {
             return;
         }
 
         if (this.state.user.id === null) {
-           this.state.user.id = this.state.users.length;
+            this.state.user.id = this.state.users.length;
             UsersActions.saveUser(this.state.user);
         } else {
             UsersActions.updateUser(this.state.user);
         }
 
+        this.setState({
+            users: UsersStore.getAllUsers()
+        });
+        this.detail.current.close();
+    }
+
+    deleteUser() {
+        UsersActions.deleteUser(this.state.user.id);
         this.setState({
             users: UsersStore.getAllUsers()
         });

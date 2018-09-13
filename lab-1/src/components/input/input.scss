@@ -1,3 +1,7 @@
 .input {
   height: 70px;
+
+  &-error {
+    border-color: red;
+  }
 }

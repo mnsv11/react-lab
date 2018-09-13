@@ -11,7 +11,7 @@ class Routing extends Component {
             <Router>
                 <div className="menu">
                     <div className="menu-links">
-                        <MenuLink activeOnlyWhenExact={true} to="/" label="Home" />
+                        <MenuLink activeOnlyWhenExact={true} to="/" label="Users" />
                         <MenuLink to="/topics" label="Topics" />
                         <MenuLink to="/about" label="About" />
                     </div>

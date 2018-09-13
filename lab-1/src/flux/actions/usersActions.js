@@ -17,7 +17,13 @@ class UsersActions {
         })
     }
 
-
+    deleteUser(id) {
+        console.log("delete user id: " + id)
+        Dispatcher.dispatch({
+            actionType: ActionTypes.DELETE_USER,
+            value: id
+        })
+    }
 }
 
 

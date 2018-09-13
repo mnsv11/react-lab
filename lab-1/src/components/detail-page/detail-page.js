@@ -6,6 +6,12 @@ import InputField from '../input/input';
 class DetailPage extends Component {
 
     render() {
+
+
+        let deleteButton;
+        if(this.props.state.id) {
+            deleteButton = <button className="details-content-row3-button" type='button' onClick={this.props.deleteUser}>Delete user</button>;
+        }
         return (
             <div className="details" ref="details">
                 <div className="details-header">
@@ -32,6 +38,7 @@ class DetailPage extends Component {
                         <InputField placeholder='Country' name='country' value={this.props.state.country} error={this.props.errors.country} onChange={this.props.updateUser}/>
                         <InputField placeholder='Phone' name='phone' value={this.props.state.phone} error={this.props.errors.phone} onChange={this.props.updateUser}/>
                         <button className="details-content-row3-button" type='button' onClick={this.props.save}>Save</button>
+                        {deleteButton}
                     </div>
 
                 </div>
