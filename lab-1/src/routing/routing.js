@@ -4,6 +4,7 @@ import './routing.scss';
 import MainPage from '../components/main-page/main-page';
 import About from "../components/about/about"
 import PageNotFound from "../components/pageNotFound/pageNotFound"
+import Topics from "../components/topics/topics"
 
 class Routing extends Component {
     render() {
@@ -17,7 +18,7 @@ class Routing extends Component {
                     </div>
 
                     <Route exact path="/" component={MainPage} />
-                    <Route path="/topics" component={MainPage} />
+                    <Route path="/topics" component={Topics} />
                     <Route path="/about" component={About} />
                     <Route component={PageNotFound} />
                 </div>
