@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./main-page.scss";
+import "./users.scss";
 import DetailPage from "../detail-page/detail-page";
 import Table from "../table/table";
 import UsersActions from "../../flux/actions/usersActions"
 import UsersStore from "../../flux/stores/usersStore"
 
-class MainPage extends Component {
+class Users extends Component {
 
     constructor(props) {
         super(props);
@@ -53,13 +53,13 @@ class MainPage extends Component {
 
     render() {
         return (
-            <div className="mainPage">
-                <header className="mainPage-header">
-                    <h1 className="mainPage-header-title">Users</h1>
+            <div className="users">
+                <header className="users-header">
+                    <h1 className="users-header-title">Users</h1>
                 </header>
                 <div>
                     <Table users={this.state.users} tableClick={this.tableClick}/>
-                    <button className="mainPage-button" type='button' onClick={this.addNewUser}>Add new user</button>
+                    <button className="users-button" type='button' onClick={this.addNewUser}>Add new user</button>
                 </div>
                 <DetailPage state={this.state.user} updateUser={this.updateUser} save={this.save} deleteUser={this.deleteUser} errors={this.state.errors} ref={this.detail}/>
             </div>
@@ -201,4 +201,4 @@ class MainPage extends Component {
     }
 }
 
-export default MainPage;
+export default Users;

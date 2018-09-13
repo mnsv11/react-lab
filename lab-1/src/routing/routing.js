@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './routing.scss';
-import MainPage from '../components/main-page/main-page';
+import Users from '../components/users/users';
 import About from "../components/about/about"
 import PageNotFound from "../components/pageNotFound/pageNotFound"
 import Topics from "../components/topics/topics"
@@ -17,7 +17,7 @@ class Routing extends Component {
                         <MenuLink to="/about" label="About" />
                     </div>
 
-                    <Route exact path="/" component={MainPage} />
+                    <Route exact path="/" component={Users} />
                     <Route path="/topics" component={Topics} />
                     <Route path="/about" component={About} />
                     <Route component={PageNotFound} />
