@@ -24,7 +24,8 @@ class MainPage extends Component {
                 country: ""
             },
             pos: null,
-            users: UsersStore.getAllUsers()
+            users: UsersStore.getAllUsers(),
+            errors: {}
         };
 
         this.save = this.save.bind(this);
@@ -44,7 +45,7 @@ class MainPage extends Component {
                     <Table users={this.state.users} tableClick={this.tableClick}/>
                     <button className="mainPage-button" type='button' onClick={this.addNewUser}>Add new user</button>
                 </div>
-                <DetailPage state={this.state.user} updateUser={this.updateUser} save={this.save} ref={this.detail}/>
+                <DetailPage state={this.state.user} updateUser={this.updateUser} save={this.save} errors={this.state.errors} ref={this.detail}/>
             </div>
         );
     }
@@ -64,7 +65,8 @@ class MainPage extends Component {
                 country: "",
                 phone: "",
             },
-            pos: null
+            pos: null,
+            errors: {}
         });
         this.detail.current.view();
     }
@@ -84,7 +86,8 @@ class MainPage extends Component {
                 country: item.country,
                 phone: item.phone,
             },
-            pos: i
+            pos: i,
+            errors: {}
         });
         this.detail.current.view();
     }
@@ -97,7 +100,73 @@ class MainPage extends Component {
         });
     }
 
+    inputsIsValid() {
+        let inputIsValid = true;
+        this.state.errors = {};
+
+        if (this.state.user.name.length < 3) {
+            this.state.errors.name = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        if (this.state.user.surname.length < 3) {
+            this.state.errors.surname = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        if (!Number(this.state.user.age) > 0) {
+            this.state.errors.age = "Age must be larger then 0";
+            inputIsValid = false;
+        }
+
+        if (this.state.user.gender.length < 3) {
+            this.state.errors.gender = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        if (this.state.user.street.length < 3) {
+            this.state.errors.street = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        if (!Number(this.state.user.streetNumber) > 0) {
+            this.state.errors.streetNumber = "Street number must be larger then 0";
+            inputIsValid = false;
+        }
+
+        if (this.state.user.zip.length < 3) {
+            this.state.errors.zip = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        if (this.state.user.city.length < 3) {
+            this.state.errors.city = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        if (this.state.user.country.length < 3) {
+            this.state.errors.country = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        if (this.state.user.phone.length < 3) {
+            this.state.errors.phone = "Require at least 3 characters";
+            inputIsValid = false;
+        }
+
+        this.setState({
+            errors: this.state.errors
+        });
+
+        return inputIsValid;
+
+    }
+
     save() {
+
+        if (!this.inputsIsValid()) {
+            return;
+        }
 
         if (this.state.user.id === null) {
            this.state.user.id = this.state.users.length;

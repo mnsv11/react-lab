@@ -36,8 +36,10 @@
     align-items: center;
     height: 100%;
     &-row1, &-row2, &-row3 {
-      margin-top: 40px;
+      margin-top: 25px;
       width: 50%;
+      display: flex;
+      align-items: center;
       input {
         font-size: 16px;
         padding: 5px;
@@ -47,6 +49,7 @@
       &-button {
         width: 100px;
         height: 33px;
+        margin-bottom: 8px;
       }
     }
   }

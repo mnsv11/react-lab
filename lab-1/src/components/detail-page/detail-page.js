@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./detail-page.scss";
 import chevron from "../../assets/images/chevron.png";
+import InputField from '../input/input';
 
 class DetailPage extends Component {
 
@@ -16,20 +17,20 @@ class DetailPage extends Component {
                 </div>
                 <div className='details-content'>
                     <div className='details-content-row1'>
-                        <input type="text" placeholder='First name' name='name' value={this.props.state.name} onChange={this.props.updateUser}/>
-                        <input type="text" placeholder='Last name' name='surname' value={this.props.state.surname} onChange={this.props.updateUser}/>
-                        <input type="text" placeholder='Age' name='age' value={this.props.state.age} onChange={this.props.updateUser}/>
-                        <input type="text" placeholder='Gender' name='gender' value={this.props.state.gender} onChange={this.props.updateUser}/>
+                        <InputField placeholder='First name' name='name' value={this.props.state.name} error={this.props.errors.name} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Last name' name='surname' value={this.props.state.surname} error={this.props.errors.surname} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Age' name='age' value={this.props.state.age} error={this.props.errors.age} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Gender' name='gender' value={this.props.state.gender} error={this.props.errors.gender} onChange={this.props.updateUser}/>
                     </div>
                     <div className='details-content-row2'>
-                        <input type="text" placeholder='Street' name='street' value={this.props.state.street} onChange={this.updateUser}/>
-                        <input type="text" placeholder='Street number' name='streetNumber' value={this.props.state.streetNumber} onChange={this.props.updateUser}/>
-                        <input type="text" placeholder='Zip' name='zip' value={this.props.state.zip} onChange={this.props.updateUser}/>
-                        <input type="text" placeholder='City' name='city' value={this.props.state.city} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Street' name='street' value={this.props.state.street} error={this.props.errors.street} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Street number' name='streetNumber' value={this.props.state.streetNumber} error={this.props.errors.streetNumber} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Zip' name='zip' value={this.props.state.zip} error={this.props.errors.zip} onChange={this.props.updateUser}/>
+                        <InputField placeholder='City' name='city' value={this.props.state.city} error={this.props.errors.city} onChange={this.props.updateUser}/>
                     </div>
                     <div className='details-content-row3'>
-                        <input type="text" placeholder='Country' name='country' value={this.props.state.country} onChange={this.props.updateUser}/>
-                        <input type="text" placeholder='Phone' name='phone' value={this.props.state.phone} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Country' name='country' value={this.props.state.country} error={this.props.errors.country} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Phone' name='phone' value={this.props.state.phone} error={this.props.errors.phone} onChange={this.props.updateUser}/>
                         <button className="details-content-row3-button" type='button' onClick={this.props.save}>Save</button>
                     </div>
 
