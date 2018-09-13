@@ -6,7 +6,6 @@ class Input extends Component {
     render() {
 
         let className = '';
-        console.log(this.props.error)
         if(this.props.error) {
             className = 'input-error'
         }

@@ -28,12 +28,27 @@ class MainPage extends Component {
             errors: {}
         };
 
+        this._onChange = this._onChange.bind(this);
         this.save = this.save.bind(this);
         this.deleteUser = this.deleteUser.bind(this);
         this.updateUser = this.updateUser.bind(this);
         this.tableClick = this.tableClick.bind(this);
         this.addNewUser = this.addNewUser.bind(this);
         this.detail = React.createRef();
+    }
+
+    componentWillMount() {
+        UsersStore.addChangeListener(this._onChange);
+    }
+
+    componentWillUnmount() {
+        UsersStore.removeChangeListener(this._onChange);
+    }
+
+    _onChange() {
+        this.setState({
+            users: UsersStore.getAllUsers()
+        });
     }
 
     render() {
@@ -177,17 +192,11 @@ class MainPage extends Component {
             UsersActions.updateUser(this.state.user);
         }
 
-        this.setState({
-            users: UsersStore.getAllUsers()
-        });
         this.detail.current.close();
     }
 
     deleteUser() {
         UsersActions.deleteUser(this.state.user.id);
-        this.setState({
-            users: UsersStore.getAllUsers()
-        });
         this.detail.current.close();
     }
 }

@@ -9,7 +9,7 @@ class DetailPage extends Component {
 
 
         let deleteButton;
-        if(this.props.state.id) {
+        if(this.props.state.id !== null) {
             deleteButton = <button className="details-content-row3-button" type='button' onClick={this.props.deleteUser}>Delete user</button>;
         }
         return (
