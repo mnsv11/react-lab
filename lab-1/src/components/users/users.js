@@ -10,22 +10,16 @@ class Users extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            user: {
-                id: null,
-                name: "",
-                surname: "",
-                age: 0,
-                gender: "",
-                street: "",
-                streetNumber: "",
-                city: "",
-                zip: "",
-                phone: "",
-                country: ""
-            },
+            user: Users.createUserObject(),
             pos: null,
             users: UsersStore.getAllUsers(),
-            header: [{value: 'Name', type: 'string'}, {value: 'Surname', type: 'string'}, {value: 'Age', type: 'number'}, {value: 'Phone', type: 'number'}, {value: 'Gender', type: 'string'}],
+            header: [
+                {value: 'Name', type: 'string'},
+                {value: 'Surname', type: 'string'},
+                {value: 'Age', type: 'number'},
+                {value: 'Phone', type: 'number'},
+                {value: 'Gender', type: 'string'}
+            ],
             errors: {}
         };
 
@@ -52,6 +46,22 @@ class Users extends Component {
         });
     }
 
+    static createUserObject(data) {
+        return {
+            id: data ? data.id : null,
+            name: data ? data.name : "",
+            surname: data ? data.surname : "",
+            gender: data ? data.gender : "",
+            age: data ? data.age : 0,
+            street: data ? data.street : "",
+            streetNumber: data ? data.streetNumber : "",
+            city: data ? data.city : "",
+            zip: data ? data.zip : "",
+            country: data ? data.country : "",
+            phone: data ? data.phone : "",
+        }
+    }
+
     render() {
         return (
             <div className="users">
@@ -69,19 +79,7 @@ class Users extends Component {
 
     addNewUser() {
         this.setState({
-            user: {
-                id: null,
-                name: "",
-                surname: "",
-                gender: "",
-                age: 0,
-                street: "",
-                streetNumber: "",
-                city: "",
-                zip: "",
-                country: "",
-                phone: "",
-            },
+            user: Users.createUserObject(),
             pos: null,
             errors: {}
         });
@@ -90,19 +88,7 @@ class Users extends Component {
 
     tableClick(item, i) {
         this.setState({
-            user: {
-                id: item.id,
-                name: item.name,
-                surname: item.surname,
-                gender: item.gender,
-                age: item.age,
-                street: item.street,
-                streetNumber: item.streetNumber,
-                city: item.city,
-                zip: item.zip,
-                country: item.country,
-                phone: item.phone,
-            },
+            user: Users.createUserObject(item),
             pos: i,
             errors: {}
         });

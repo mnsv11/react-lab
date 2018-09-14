@@ -9,6 +9,7 @@
   }
   td, tr {
     cursor: pointer;
+    user-select: none;
   }
   tr:nth-child(even) {
     background-color: #dddddd;

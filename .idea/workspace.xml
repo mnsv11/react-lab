@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8859041-c7c8-444d-89e9-3202d869051e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-1/src/components/table/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/table/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-1/src/components/table/table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/table/table.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-1/src/components/users/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/users/users.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,7 +38,7 @@
         <counts>
           <entry key="css" value="13" />
           <entry key="gitignore" value="2" />
-          <entry key="js" value="76" />
+          <entry key="js" value="77" />
           <entry key="json" value="4" />
           <entry key="main-page-scss" value="1" />
           <entry key="md" value="1" />
@@ -48,7 +50,7 @@
         <counts>
           <entry key="CSS" value="13" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="76" />
+          <entry key="JavaScript" value="77" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="RNG Compact" value="2" />
           <entry key="SCSS" value="28" />
@@ -58,18 +60,18 @@
         <counts>
           <entry key="css" value="56" />
           <entry key="gitignore" value="22" />
-          <entry key="js" value="7451" />
+          <entry key="js" value="7602" />
           <entry key="json" value="414" />
-          <entry key="scss" value="649" />
+          <entry key="scss" value="655" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="56" />
           <entry key="JSON" value="414" />
-          <entry key="JavaScript" value="7451" />
+          <entry key="JavaScript" value="7602" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="SCSS" value="649" />
+          <entry key="SCSS" value="655" />
         </counts>
       </usages-collector>
     </session>
@@ -79,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/users/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -91,11 +93,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="585">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab-1/src/components/input/input.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -106,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -137,6 +151,7 @@
       <find>data</find>
       <find>props</find>
       <find>tableClick</find>
+      <find>_onChange</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -179,7 +194,6 @@
         <option value="$PROJECT_DIR$/lab-1/src/flux/actions/usersActions.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/components/input/input.scss" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/input/input.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js" />
         <option value="$PROJECT_DIR$/lab-1/src/flux/stores/usersStore.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/main-page/main-page.js" />
@@ -190,6 +204,7 @@
         <option value="$PROJECT_DIR$/lab-1/src/components/table/table.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/components/users/users.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/table/table.js" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/input/input.js" />
       </list>
     </option>
   </component>
@@ -262,6 +277,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="about" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React_1" type="462c0819:PsiDirectoryNode" />
+              <item name="lab-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
@@ -356,12 +379,12 @@
       <workItem from="1536235691328" duration="3085000" />
       <workItem from="1536307611383" duration="29247000" />
       <workItem from="1536748980496" duration="26543000" />
-      <workItem from="1536842817948" duration="8884000" />
+      <workItem from="1536842817948" duration="14497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124808000" />
+    <option name="totallyTimeSpent" value="130421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/input/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -649,15 +665,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/users/users.js">
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/input/input.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="420">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -666,8 +682,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="585">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/users/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

@@ -3,6 +3,7 @@ import "./table.scss";
 import PropTypes from 'prop-types';
 
 let rowToSort = '';
+let desc: false;
 
 class Table extends Component {
 
@@ -11,11 +12,10 @@ class Table extends Component {
 
         this.state = {
             users: this.props.users,
-            desc: false,
             header: this.props.header
         };
-        this.sortNumber = this.sortNumber.bind(this);
-        this.sortString = this.sortString.bind(this);
+        Table.sortNumber = Table.sortNumber.bind(this);
+        Table.sortString = Table.sortString.bind(this);
     }
 
     render() {
@@ -24,7 +24,7 @@ class Table extends Component {
             <tr onClick={(element) => {this.headerClick(element.target);}}>
                 {
                     this.state.header.map((name, i) => {
-                        return this.createHeader(name, i);
+                        return Table.createHeader(name, i);
                     })
                 }
             </tr>
@@ -37,7 +37,7 @@ class Table extends Component {
         </table>)
     }
 
-    createHeader(name, i) {
+    static createHeader(name, i) {
         return (<th key={i} direction="desc" type={name.type}>{name.value}</th>)
     }
 
@@ -46,14 +46,14 @@ class Table extends Component {
             <tr key={i} onClick={() => {this.rowClick(user ,i);}}>
                 {
                     this.state.header.map((name, i) => {
-                        return this.createCell(user, name.value.toLowerCase(), i);
+                        return Table.createCell(user, name.value.toLowerCase(), i);
                     })
                 }
             </tr>
         )
     }
 
-    createCell(user, item, i) {
+    static createCell(user, item, i) {
         return(<td key={i}>{user[item]}</td>)
     }
 
@@ -64,21 +64,18 @@ class Table extends Component {
     headerClick(item) {
         if (item.getAttribute('direction') === 'desc') {
             item.setAttribute('direction', 'asc');
-            this.setState({
-                desc: true
-            })
+            desc = true;
         } else {
             item.setAttribute('direction', 'desc');
-            this.setState({
-                desc: false
-            })
+            desc = false;
+
         }
 
         rowToSort = item.innerHTML.toLowerCase();
         if(item.getAttribute('type') === 'number') {
-            this.state.users.sort(this.sortNumber);
+            this.state.users.sort(Table.sortNumber);
         } else {
-            this.state.users.sort(this.sortString);
+            this.state.users.sort(Table.sortString);
         }
 
         this.setState({
@@ -86,9 +83,9 @@ class Table extends Component {
         });
     }
 
-    sortNumber(a, b) {
+    static sortNumber(a, b) {
 
-        if(this.state.desc) {
+        if(desc) {
             if (Number(a[rowToSort]) < Number(b[rowToSort])) {
                 return -1;
             }
@@ -101,8 +98,8 @@ class Table extends Component {
         }
     }
 
-    sortString(a, b) {
-        if(this.state.desc) {
+    static sortString(a, b) {
+        if(desc) {
             if (a[rowToSort] < b[rowToSort]) {
                 return -1;
             }
