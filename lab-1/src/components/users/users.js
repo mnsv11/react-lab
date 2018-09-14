@@ -25,6 +25,7 @@ class Users extends Component {
             },
             pos: null,
             users: UsersStore.getAllUsers(),
+            header: [{value: 'Name', type: 'string'}, {value: 'Surname', type: 'string'}, {value: 'Age', type: 'number'}, {value: 'Phone', type: 'number'}, {value: 'Gender', type: 'string'}],
             errors: {}
         };
 
@@ -58,7 +59,7 @@ class Users extends Component {
                     <h1 className="users-header-title">Users</h1>
                 </header>
                 <div>
-                    <Table users={this.state.users} tableClick={this.tableClick}/>
+                    <Table users={this.state.users} header={this.state.header} tableClick={this.tableClick}/>
                     <button className="users-button" type='button' onClick={this.addNewUser}>Add new user</button>
                 </div>
                 <DetailPage state={this.state.user} updateUser={this.updateUser} save={this.save} deleteUser={this.deleteUser} errors={this.state.errors} ref={this.detail}/>

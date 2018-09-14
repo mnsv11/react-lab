@@ -12,6 +12,7 @@ class Table extends Component {
         this.state = {
             users: this.props.users,
             desc: false,
+            header: this.props.header
         };
         this.sortNumber = this.sortNumber.bind(this);
         this.sortString = this.sortString.bind(this);
@@ -21,31 +22,39 @@ class Table extends Component {
         return (<table className="table">
             <tbody>
             <tr onClick={(element) => {this.headerClick(element.target);}}>
-                <th direction="desc">Name</th>
-                <th direction="desc">Surname</th>
-                <th direction="desc">Age</th>
-                <th direction="desc">Phone</th>
-                <th direction="desc">Gender</th>
+                {
+                    this.state.header.map((name, i) => {
+                        return this.createHeader(name, i);
+                    })
+                }
             </tr>
-            {
-                this.state.users.map((user, i) => {
-                    return this.createRow(user, i);
-                })
-            }
+                {
+                    this.state.users.map((user, i) => {
+                        return this.createRow(user, i);
+                    })
+                }
             </tbody>
         </table>)
+    }
+
+    createHeader(name, i) {
+        return (<th key={i} direction="desc" type={name.type}>{name.value}</th>)
     }
 
     createRow(user, i) {
         return (
             <tr key={i} onClick={() => {this.rowClick(user ,i);}}>
-                <td>{user.name}</td>
-                <td>{user.surname}</td>
-                <td>{user.age}</td>
-                <td>{user.phone}</td>
-                <td>{user.gender}</td>
+                {
+                    this.state.header.map((name, i) => {
+                        return this.createCell(user, name.value.toLowerCase(), i);
+                    })
+                }
             </tr>
         )
+    }
+
+    createCell(user, item, i) {
+        return(<td key={i}>{user[item]}</td>)
     }
 
     rowClick(item, i) {
@@ -66,20 +75,16 @@ class Table extends Component {
         }
 
         rowToSort = item.innerHTML.toLowerCase();
-        if(item.innerHTML === 'Age' || item.innerHTML === 'Phone') {
+        if(item.getAttribute('type') === 'number') {
             this.state.users.sort(this.sortNumber);
         } else {
             this.state.users.sort(this.sortString);
         }
 
-
-
         this.setState({
             users: this.state.users
         });
-
     }
-
 
     sortNumber(a, b) {
 
@@ -113,6 +118,7 @@ class Table extends Component {
 
 Table.propTypes = {
     users: PropTypes.array.isRequired,
+    header: PropTypes.array.isRequired,
     tableClick: PropTypes.func.isRequired
 };
 
