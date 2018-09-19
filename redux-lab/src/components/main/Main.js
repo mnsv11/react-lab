@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 import "./main.scss";
 import InputField from '../input/input';
-
+import * as topicActions from '../../reduxComponents/actions/topicActions'
 
 class Main extends Component {
 
@@ -21,11 +23,11 @@ class Main extends Component {
         return (
             <div className="main">
                 <div className='main-head'><h1>Main</h1></div>
-
                 <div className="main-content">
                     <InputField type='text' value={this.state.topic.title} onChange={this.onTitleChange}/>
                     <input type='submit' value='Save' onClick={this.onClickSave}/>
                 </div>
+                {this.props.topics.map(this.topicRow)}
             </div>
         );
     }
@@ -40,15 +42,26 @@ class Main extends Component {
     }
 
     onClickSave() {
-        //this.props.dispatch(createTopic(this.state.topic))
-
-        console.log(this.state.topic)
+        if(this.state.topic.title) {
+            this.props.dispatch(topicActions.createTopic(this.state.topic));
+            this.setState({
+                topic: {
+                    title: ""
+                }
+            })
+        }
     }
 
     topicRow(topic, index) {
-        return <div key={index}>{topic.title}</div>;
+        //debugger;
+        return <div className='main-row' key={index}>{topic.title}</div>;
     }
 }
+
+Main.propTypes = {
+    dispatch: PropTypes.func.isRequired,
+    topics: PropTypes.array.isRequired
+};
 
 
 function mapStateToProps(state, ownProps) {
@@ -57,8 +70,4 @@ function mapStateToProps(state, ownProps) {
     }
 }
 
-
-
-
-
-export default Main;
+export default connect(mapStateToProps)(Main);
