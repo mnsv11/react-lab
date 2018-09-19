@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import "./topics.scss";
-import "../header/header"
-import Header from "../header/header";
-import InputField from "../input/input";
-import {connect} from 'react-redux';
-import { createTopic } from '../../redux/actions/topicActions'
-import PropTypes from 'prop-types';
+import "./main.scss";
+import InputField from '../input/input';
 
-class Topics extends Component {
+
+class Main extends Component {
 
     constructor(props, context) {
         super(props, context);
@@ -23,10 +19,10 @@ class Topics extends Component {
 
     render() {
         return (
-            <div className="topics">
-                <Header title="Topics"/>
-                {this.props.topics.map(this.topicRow)}
-                <div className="topics-content">
+            <div className="main">
+                <div className='main-head'><h1>Main</h1></div>
+
+                <div className="main-content">
                     <InputField type='text' value={this.state.topic.title} onChange={this.onTitleChange}/>
                     <input type='submit' value='Save' onClick={this.onClickSave}/>
                 </div>
@@ -44,20 +40,16 @@ class Topics extends Component {
     }
 
     onClickSave() {
-        this.props.dispatch(createTopic(this.state.topic))
+        //this.props.dispatch(createTopic(this.state.topic))
+
+        console.log(this.state.topic)
     }
 
     topicRow(topic, index) {
         return <div key={index}>{topic.title}</div>;
     }
-
-
 }
 
-Topics.prototype = {
-    dispatch: PropTypes.func.isRequired,
-    topics: PropTypes.array.isRequired
-};
 
 function mapStateToProps(state, ownProps) {
     return {
@@ -67,4 +59,6 @@ function mapStateToProps(state, ownProps) {
 
 
 
-export default connect(mapStateToProps)(Topics);
+
+
+export default Main;

@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import "./detail-page.scss";
 import chevron from "../../assets/images/chevron.png";
 import InputField from '../input/input';
+import SelectBox from '../select/select';
 
 class DetailPage extends Component {
 
     render() {
-
 
         let deleteButton;
         if(this.props.state.id !== null) {
@@ -26,7 +26,7 @@ class DetailPage extends Component {
                         <InputField placeholder='First name' name='name' value={this.props.state.name} error={this.props.errors.name} onChange={this.props.updateUser}/>
                         <InputField placeholder='Last name' name='surname' value={this.props.state.surname} error={this.props.errors.surname} onChange={this.props.updateUser}/>
                         <InputField placeholder='Age' name='age' value={this.props.state.age} error={this.props.errors.age} onChange={this.props.updateUser}/>
-                        <InputField placeholder='Gender' name='gender' value={this.props.state.gender} error={this.props.errors.gender} onChange={this.props.updateUser}/>
+                        <SelectBox name='gender' value={this.props.state.gender} onChange={this.props.updateUser} error={this.props.errors.gender} />
                     </div>
                     <div className='details-content-row2'>
                         <InputField placeholder='Street' name='street' value={this.props.state.street} error={this.props.errors.street} onChange={this.props.updateUser}/>

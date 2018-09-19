@@ -7,6 +7,8 @@ import PageNotFound from "../components/pageNotFound/pageNotFound"
 import Topics from "../components/topics/topics"
 
 class Routing extends Component {
+
+
     render() {
         return (
             <Router>
@@ -16,11 +18,12 @@ class Routing extends Component {
                         <MenuLink to="/topics" label="Topics" />
                         <MenuLink to="/about" label="About" />
                     </div>
-
-                    <Route exact path="/" component={Users} />
-                    <Route path="/topics" component={Topics} />
-                    <Route path="/about" component={About} />
-                    <Route component={PageNotFound} />
+                    <div className="menu-route">
+                        <Route exact path="/" component={Users} />
+                        <Route path="/topics" component={Topics} />
+                        <Route path="/about" component={About} />
+                        <Route component={PageNotFound} />
+                    </div>
                 </div>
             </Router>
         )

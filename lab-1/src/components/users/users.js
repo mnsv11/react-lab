@@ -4,6 +4,7 @@ import DetailPage from "../detail-page/detail-page";
 import Table from "../table/table";
 import UsersActions from "../../flux/actions/usersActions"
 import UsersStore from "../../flux/stores/usersStore"
+import Header from "../header/header";
 
 class Users extends Component {
 
@@ -65,9 +66,7 @@ class Users extends Component {
     render() {
         return (
             <div className="users">
-                <header className="users-header">
-                    <h1 className="users-header-title">Users</h1>
-                </header>
+                <Header title="Users"/>
                 <div>
                     <Table users={this.state.users} header={this.state.header} tableClick={this.tableClick}/>
                     <button className="users-button" type='button' onClick={this.addNewUser}>Add new user</button>
@@ -97,74 +96,42 @@ class Users extends Component {
 
 
     updateUser(event) {
-        this.state.user[event.target.name] = event.target.value;
+        const state = this.state.user;
+        state[event.target.name] = event.target.value;
         this.setState({
-            user: this.state.user
+            user: state
         });
     }
 
+    validateInput(errorMessage, objectTypeName, valueToCompare, mainValue, messages ) {
+        if (mainValue < valueToCompare) {
+            messages[objectTypeName] = errorMessage;
+        }
+    }
+
     inputsIsValid() {
-        let inputIsValid = true;
+
         let messages = {};
         this.setState({
             errors: {}
         });
 
-        if (this.state.user.name.length < 3) {
-            messages.name = "Require at least 3 characters";
-            inputIsValid = false;
-        }
-
-        if (this.state.user.surname.length < 3) {
-            messages.surname = "Require at least 3 characters";
-            inputIsValid = false;
-        }
-
-        if (!Number(this.state.user.age) > 0) {
-            messages.age = "Age must be larger then 0";
-            inputIsValid = false;
-        }
-
-        if (this.state.user.gender.length < 3) {
-            messages.gender = "Require at least 3 characters";
-            inputIsValid = false;
-        }
-
-        if (this.state.user.street.length < 3) {
-            messages.street = "Require at least 3 characters";
-            inputIsValid = false;
-        }
-
-        if (!Number(this.state.user.streetNumber) > 0) {
-            messages.streetNumber = "Street number must be larger then 0";
-            inputIsValid = false;
-        }
-
-        if (this.state.user.zip.length < 3) {
-            messages.zip = "Require at least 3 characters";
-            inputIsValid = false;
-        }
-
-        if (this.state.user.city.length < 3) {
-            messages.city = "Require at least 3 characters";
-            inputIsValid = false;
-        }
-
-        if (this.state.user.country.length < 3) {
-            messages.country = "Require at least 3 characters";
-            inputIsValid = false;
-        }
-
-        if (this.state.user.phone.length < 3) {
-            messages.phone = "Require at least 3 characters";
-            inputIsValid = false;
-        }
+        this.validateInput("Require at least 3 characters", 'name', 3, this.state.user.name.length, messages);
+        this.validateInput("Require at least 3 characters", 'surname', 3, this.state.user.surname.length, messages);
+        this.validateInput("Age must be larger then 0", 'age', !Number(this.state.user.age), 0, messages);
+        this.validateInput("Require at least 3 characters", 'gender', 3, this.state.user.gender.length, messages);
+        this.validateInput("Require at least 3 characters", 'street', 3, this.state.user.street.length, messages);
+        this.validateInput("Street number must be larger then 0", 'streetNumber', !Number(this.state.user.streetNumber), 0, messages);
+        this.validateInput("Require at least 3 characters", 'zip', 3, this.state.user.zip.length, messages);
+        this.validateInput("Require at least 3 characters", 'city', 3, this.state.user.city.length, messages);
+        this.validateInput("Require at least 3 characters", 'country', 3, this.state.user.country.length, messages);
+        this.validateInput("Require at least 3 characters", 'phone', 3, this.state.user.phone.length, messages);
 
         this.setState({
             errors: messages
         });
 
-        return inputIsValid;
+        return !Object.keys(messages).length > 0;
     }
 
     save() {
@@ -173,8 +140,9 @@ class Users extends Component {
         }
 
         if (this.state.user.id === null) {
-            this.state.user.id = this.state.users.length;
-            UsersActions.saveUser(this.state.user);
+            const state = this.state.user;
+            state.id = this.state.users.length;
+            UsersActions.saveUser(state);
         } else {
             UsersActions.updateUser(this.state.user);
         }

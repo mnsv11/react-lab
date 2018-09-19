@@ -4,12 +4,6 @@
   overflow-x: hidden;
   overflow-y: overlay;
   position: relative;
-  &-header {
-    display: flex;
-    justify-content: center;
-    background-color: #dddddd;
-    height: 80px;
-  }
   &-button {
     width: 100px;
     height: 30px;
