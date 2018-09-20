@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 import "./main.scss";
 import InputField from '../input/input';
-import * as topicActions from '../../reduxComponents/actions/topicActions'
+import * as topicActions from '../../reduxComponents/actions/topicActions';
 
 class Main extends Component {
 
@@ -43,7 +44,7 @@ class Main extends Component {
 
     onClickSave() {
         if(this.state.topic.title) {
-            this.props.dispatch(topicActions.createTopic(this.state.topic));
+            this.props.actions.createTopic(this.state.topic);
             this.setState({
                 topic: {
                     title: ""
@@ -59,7 +60,7 @@ class Main extends Component {
 }
 
 Main.propTypes = {
-    dispatch: PropTypes.func.isRequired,
+    actions: PropTypes.object.isRequired,
     topics: PropTypes.array.isRequired
 };
 
@@ -70,4 +71,11 @@ function mapStateToProps(state, ownProps) {
     }
 }
 
-export default connect(mapStateToProps)(Main);
+function mapsDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(topicActions, dispatch)
+    }
+    
+}
+
+export default connect(mapStateToProps, mapsDispatchToProps)(Main);

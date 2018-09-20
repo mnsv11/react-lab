@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8859041-c7c8-444d-89e9-3202d869051e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/redux-lab/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redux-lab/src/components/main/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/components/topics/topics.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/topics/topics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/redux/actions/topicActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/reduxComponents/actions/topicActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/redux/reducers/topicReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/topicReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/redux/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/reduxComponents/store/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/src/components/input/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/components/input/input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/src/components/input/input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/components/input/input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/components/main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/src/components/main/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux-lab/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/components/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/topicReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/topicReducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,7 +36,7 @@
         <counts>
           <entry key="css" value="17" />
           <entry key="gitignore" value="3" />
-          <entry key="js" value="151" />
+          <entry key="js" value="158" />
           <entry key="json" value="7" />
           <entry key="main-page-scss" value="1" />
           <entry key="md" value="1" />
@@ -68,7 +48,7 @@
         <counts>
           <entry key="CSS" value="17" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="151" />
+          <entry key="JavaScript" value="158" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="4" />
           <entry key="SCSS" value="44" />
@@ -78,7 +58,7 @@
         <counts>
           <entry key="css" value="56" />
           <entry key="gitignore" value="22" />
-          <entry key="js" value="10951" />
+          <entry key="js" value="11235" />
           <entry key="json" value="438" />
           <entry key="scss" value="1032" />
         </counts>
@@ -87,7 +67,7 @@
         <counts>
           <entry key="CSS" value="56" />
           <entry key="JSON" value="438" />
-          <entry key="JavaScript" value="10951" />
+          <entry key="JavaScript" value="11235" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="SCSS" value="1032" />
         </counts>
@@ -102,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/redux-lab/src/components/main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="514">
+              <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -112,19 +92,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redux-lab/src/components/main/main.scss">
+        <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/topicReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redux-lab/src/components/input/input.scss">
+        <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/store/configureStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="135">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/actions/topicActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -188,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lab-1/src/components/routing/routing.js" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/404/404.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/pageNotFound/PageNotFount.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/components/pageNotFound/pageNotFound.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/components/pageNotFound/pageNotFound.js" />
@@ -239,6 +229,8 @@
         <option value="$PROJECT_DIR$/redux-lab/src/components/input/input.scss" />
         <option value="$PROJECT_DIR$/redux-lab/src/components/main/main.scss" />
         <option value="$PROJECT_DIR$/redux-lab/src/components/main/Main.js" />
+        <option value="$PROJECT_DIR$/redux-lab/src/reduxComponents/actions/topicActions.js" />
+        <option value="$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/topicReducer.js" />
       </list>
     </option>
   </component>
@@ -291,17 +283,6 @@
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="React_1" type="462c0819:PsiDirectoryNode" />
-              <item name="lab-1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React_1" type="462c0819:PsiDirectoryNode" />
-              <item name="lab-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React_1" type="462c0819:PsiDirectoryNode" />
               <item name="redux-lab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,6 +320,14 @@
               <item name="redux-lab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reduxComponents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React_1" type="462c0819:PsiDirectoryNode" />
+              <item name="redux-lab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reduxComponents" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
@@ -416,12 +405,12 @@
       <workItem from="1536235691328" duration="3085000" />
       <workItem from="1536307611383" duration="29247000" />
       <workItem from="1536748980496" duration="26543000" />
-      <workItem from="1536842817948" duration="61735000" />
+      <workItem from="1536842817948" duration="72253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177659000" />
+    <option name="totallyTimeSpent" value="188177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -767,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/actions/topicActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redux-lab/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -787,33 +769,6 @@
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/store/configureStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/topicReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -845,10 +800,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/topicReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/store/configureStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/actions/topicActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux-lab/src/reduxComponents/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/redux-lab/src/components/main/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="514">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
