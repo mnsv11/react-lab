@@ -16,5 +16,7 @@
   }
   &-row {
     margin-top: 5px;
+    transition: all 1s;
+    opacity: 0;
   }
 }

@@ -14,10 +14,17 @@ class Main extends Component {
         this.state = {
             topic: {
                 title: ""
-            }
+            },
+            header: [
+                {
+                    value: 'Name',
+                    type: "string"
+                }
+            ]
         };
         this.onTitleChange = this.onTitleChange.bind(this);
         this.onClickSave = this.onClickSave.bind(this);
+        this.topicRow = this.topicRow.bind(this);
     }
 
     render() {
@@ -42,6 +49,10 @@ class Main extends Component {
 
     }
 
+    onKeyDown (key) {
+        console.log(key);
+    }
+
     onClickSave() {
         if(this.state.topic.title) {
             this.props.actions.createTopic(this.state.topic);
@@ -55,7 +66,13 @@ class Main extends Component {
 
     topicRow(topic, index) {
         //debugger;
-        return <div className='main-row' key={index}>{topic.title}</div>;
+
+
+        setTimeout(() => {
+            this.refs.lastRow.style.opacity = 1;
+        }, 500);
+
+        return <div className='main-row hidden' key={index} ref="lastRow">{topic.title}</div>;
     }
 }
 

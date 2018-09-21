@@ -3,15 +3,26 @@ import "./table.scss";
 import PropTypes from 'prop-types';
 
 let rowToSort = '';
-let desc: false;
+let desc = false;
 
+/**
+ * this.props.values {Array} [
+ *                              {name: 'Kalle', age: '22'},
+ *                              {name: 'Maria', age: '32'}
+ *                           ]
+ *
+ * this.props.header {Array} [
+ *                              {value: 'Name', type:'string'},
+ *                              {value: 'Age', type: 'number'}
+ *                           ]
+ */
 class Table extends Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            users: this.props.users,
+            values: this.props.values,
             header: this.props.header
         };
         Table.sortNumber = Table.sortNumber.bind(this);
@@ -29,8 +40,8 @@ class Table extends Component {
                 }
             </tr>
                 {
-                    this.state.users.map((user, i) => {
-                        return this.createRow(user, i);
+                    this.state.values.map((value, i) => {
+                        return this.createRow(value, i);
                     })
                 }
             </tbody>
@@ -41,20 +52,21 @@ class Table extends Component {
         return (<th key={i} direction="desc" type={name.type}>{name.value}</th>)
     }
 
-    createRow(user, i) {
+    createRow(value, i) {
+
         return (
-            <tr key={i} onClick={() => {this.rowClick(user ,i);}}>
+            <tr key={i} onClick={() => {this.rowClick(value ,i);}}>
                 {
                     this.state.header.map((name, i) => {
-                        return Table.createCell(user, name.value.toLowerCase(), i);
+                        return Table.createCell(value, name.value.toLowerCase(), i);
                     })
                 }
             </tr>
         )
     }
 
-    static createCell(user, item, i) {
-        return(<td key={i}>{user[item]}</td>)
+    static createCell(value, item, i) {
+        return(<td key={i}>{value[item]}</td>)
     }
 
     rowClick(item, i) {
@@ -73,13 +85,13 @@ class Table extends Component {
 
         rowToSort = item.innerHTML.toLowerCase();
         if(item.getAttribute('type') === 'number') {
-            this.state.users.sort(Table.sortNumber);
+            this.state.values.sort(Table.sortNumber);
         } else {
-            this.state.users.sort(Table.sortString);
+            this.state.values.sort(Table.sortString);
         }
 
         this.setState({
-            users: this.state.users
+            value: this.state.values
         });
     }
 
@@ -114,7 +126,7 @@ class Table extends Component {
 }
 
 Table.propTypes = {
-    users: PropTypes.array.isRequired,
+    values: PropTypes.array.isRequired,
     header: PropTypes.array.isRequired,
     tableClick: PropTypes.func.isRequired
 };

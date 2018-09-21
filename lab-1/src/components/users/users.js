@@ -39,6 +39,7 @@ class Users extends Component {
 
     componentWillUnmount() {
         UsersStore.removeChangeListener(this._onChange);
+
     }
 
     _onChange() {
@@ -68,7 +69,7 @@ class Users extends Component {
             <div className="users">
                 <Header title="Users"/>
                 <div>
-                    <Table users={this.state.users} header={this.state.header} tableClick={this.tableClick}/>
+                    <Table values={this.state.users} header={this.state.header} tableClick={this.tableClick}/>
                     <button className="users-button" type='button' onClick={this.addNewUser}>Add new user</button>
                 </div>
                 <DetailPage state={this.state.user} updateUser={this.updateUser} save={this.save} deleteUser={this.deleteUser} errors={this.state.errors} ref={this.detail}/>
