@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Kalle",
-      "surname": "Svensson",
+      "last name": "Svensson",
       "age": "34",
       "phone": "0703756214",
       "gender": "Male",
@@ -16,7 +16,7 @@
     {
       "id": 1,
       "name": "Maria",
-      "surname": "Nilsson",
+      "last name": "Nilsson",
       "age": "29",
       "phone": "0703534514",
       "gender": "Female",
@@ -29,7 +29,7 @@
     {
       "id": 2,
       "name": "Irene",
-      "surname": "Petersson",
+      "last name": "Petersson",
       "age": "48",
       "phone": "0703987621",
       "gender": "Female",
@@ -42,7 +42,7 @@
     {
       "id": 3,
       "name": "Peter",
-      "surname": "Hansson",
+      "last name": "Hansson",
       "age": "41",
       "phone": "0703159856",
       "gender": "Male",

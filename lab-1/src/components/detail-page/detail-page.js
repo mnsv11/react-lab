@@ -24,7 +24,7 @@ class DetailPage extends Component {
                 <div className='details-content'>
                     <div className='details-content-row1'>
                         <InputField placeholder='First name' name='name' value={this.props.state.name} error={this.props.errors.name} onChange={this.props.updateUser}/>
-                        <InputField placeholder='Last name' name='surname' value={this.props.state.surname} error={this.props.errors.surname} onChange={this.props.updateUser}/>
+                        <InputField placeholder='Last name' name='last name' value={this.props.state['last name']} error={this.props.errors['last name']} onChange={this.props.updateUser}/>
                         <InputField placeholder='Age' name='age' value={this.props.state.age} error={this.props.errors.age} onChange={this.props.updateUser}/>
                         <SelectBox name='gender' value={this.props.state.gender} onChange={this.props.updateUser} error={this.props.errors.gender} />
                     </div>

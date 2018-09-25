@@ -16,7 +16,7 @@ class Users extends Component {
             users: UsersStore.getAllUsers(),
             header: [
                 {value: 'Name', type: 'string'},
-                {value: 'Surname', type: 'string'},
+                {value: 'Last name', type: 'string'},
                 {value: 'Age', type: 'number'},
                 {value: 'Phone', type: 'number'},
                 {value: 'Gender', type: 'string'}
@@ -52,7 +52,7 @@ class Users extends Component {
         return {
             id: data ? data.id : null,
             name: data ? data.name : "",
-            surname: data ? data.surname : "",
+            "last name": data ? data['last name'] : "",
             gender: data ? data.gender : "",
             age: data ? data.age : 0,
             street: data ? data.street : "",
@@ -118,7 +118,7 @@ class Users extends Component {
         });
 
         this.validateInput("Require at least 3 characters", 'name', 3, this.state.user.name.length, messages);
-        this.validateInput("Require at least 3 characters", 'surname', 3, this.state.user.surname.length, messages);
+        this.validateInput("Require at least 3 characters", 'last name', 3, this.state.user['last name'].length, messages);
         this.validateInput("Age must be larger then 0", 'age', !Number(this.state.user.age), 0, messages);
         this.validateInput("Require at least 3 characters", 'gender', 3, this.state.user.gender.length, messages);
         this.validateInput("Require at least 3 characters", 'street', 3, this.state.user.street.length, messages);
