@@ -11,23 +11,23 @@ function setup() {
     return shallow(<Users />)
 }
 
-it('Table enzyme find Header', () => {
+it('Users find Header', () => {
     const wrapper = setup();
     expect(wrapper.find('Header').length).toBe(1);
 });
 
-it('Table enzyme find Table', () => {
+it('Users find Table', () => {
     const wrapper = setup();
     expect(wrapper.find('Table').length).toBe(1);
 });
 
-it('Table enzyme find Button', () => {
+it('Users find Button', () => {
     const wrapper = setup();
     expect(wrapper.find('button').length).toBe(1);
     expect(wrapper.find('button').text()).toEqual('Add new user');
 });
 
-it('Table enzyme find DetailPage', () => {
+it('Users find DetailPage', () => {
     const wrapper = setup();
     expect(wrapper.find('DetailPage').length).toBe(1);
 });

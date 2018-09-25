@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8859041-c7c8-444d-89e9-3202d869051e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/assets/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/assets/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/components/table/table.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/components/users/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/users/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-1/src/components/table/table.enzyme.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/table/table.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-1/src/components/users/users.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/users/users.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,29 +38,29 @@
         <counts>
           <entry key="css" value="17" />
           <entry key="gitignore" value="3" />
-          <entry key="js" value="189" />
-          <entry key="json" value="13" />
+          <entry key="js" value="197" />
+          <entry key="json" value="15" />
           <entry key="main-page-scss" value="1" />
           <entry key="md" value="1" />
           <entry key="rnc" value="4" />
-          <entry key="scss" value="45" />
+          <entry key="scss" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="17" />
-          <entry key="JSON" value="13" />
-          <entry key="JavaScript" value="189" />
+          <entry key="JSON" value="15" />
+          <entry key="JavaScript" value="197" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="4" />
-          <entry key="SCSS" value="46" />
+          <entry key="SCSS" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="56" />
           <entry key="gitignore" value="22" />
-          <entry key="js" value="14073" />
+          <entry key="js" value="14483" />
           <entry key="json" value="553" />
           <entry key="scss" value="1078" />
         </counts>
@@ -73,7 +69,7 @@
         <counts>
           <entry key="CSS" value="56" />
           <entry key="JSON" value="553" />
-          <entry key="JavaScript" value="14073" />
+          <entry key="JavaScript" value="14483" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="SCSS" value="1078" />
         </counts>
@@ -88,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/users/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="1110">
+              <caret line="74" column="33" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="33" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -100,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/users/users.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -110,12 +106,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.enzyme.test.js">
+        <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            <state relative-caret-position="143">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-81">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,6 +180,7 @@
       <find>ReactTestUtils</find>
       <find>createRenderer</find>
       <find>surname</find>
+      <find>button</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -175,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lab-1/src/actions/initializeData.js" />
         <option value="$PROJECT_DIR$/lab-1/src/stores/usersStore.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/main-page/main-page.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/flux/constants/usersConstants.js" />
@@ -190,7 +210,6 @@
         <option value="$PROJECT_DIR$/lab-1/src/components/about/about.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/components/about/about.js" />
         <option value="$PROJECT_DIR$/lab-1/src/routing/routing.scss" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/components/input/input.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/select/select.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/select/select.scss" />
@@ -219,13 +238,15 @@
         <option value="$PROJECT_DIR$/redux-lab/src/components/main/Main.js" />
         <option value="$PROJECT_DIR$/lab-1/package.json" />
         <option value="$PROJECT_DIR$/lab-1/tools/testSetup.js" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/table/table.test.js" />
         <option value="$PROJECT_DIR$/lab-1/src/assets/data.json" />
         <option value="$PROJECT_DIR$/lab-1/src/components/users/users.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/table/table.js" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/users/users.test.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/table/table.enzyme.test.js" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/users/users.test.js" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/table/table.test.js" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.scss" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.test.js" />
       </list>
     </option>
   </component>
@@ -322,6 +343,22 @@
               <item name="lab-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React_1" type="462c0819:PsiDirectoryNode" />
+              <item name="lab-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="select" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React_1" type="462c0819:PsiDirectoryNode" />
+              <item name="lab-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -394,12 +431,12 @@
       <workItem from="1536235691328" duration="3085000" />
       <workItem from="1536307611383" duration="29247000" />
       <workItem from="1536748980496" duration="26543000" />
-      <workItem from="1536842817948" duration="109833000" />
+      <workItem from="1536842817948" duration="117038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225757000" />
+    <option name="totallyTimeSpent" value="232962000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,7 +456,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.501046" side_tool="true" weight="0.25272927" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.10564853" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -441,23 +478,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/actions/usersActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="410" column="16" selection-start-line="410" selection-start-column="16" selection-end-line="410" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/select/select.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -465,37 +485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/select/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/input/input.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/input/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,27 +748,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/assets/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="25" column="116" selection-start-line="25" selection-start-column="116" selection-end-line="25" selection-end-column="116" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/node_modules/react-addons-test-utils/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="965">
           <caret line="72" column="3" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/header/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -789,19 +774,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/header/header.js">
+    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/stores/usersStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="600">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/assets/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/users/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="1110">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="33" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -810,18 +803,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/users/users.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.enzyme.test.js">
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="428">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/input/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/select/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/detail-page/detail-page.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

@@ -18,31 +18,38 @@ function setup() {
     return shallow(<Table {...props}/>)
 }
 
-it('Table enzyme find table', () => {
+it('Table find table', () => {
    const wrapper = setup();
 
    expect(wrapper.find('table').length).toBe(1);
 });
 
-it('Table enzyme find table head', () => {
+it('Table find table head', () => {
     const wrapper = setup();
 
     expect(wrapper.find('th').length).toBe(2);
 });
 
-it('Table enzyme find table rows', () => {
+it('Table check table head values', () => {
+    const wrapper = setup();
+
+    const texts = wrapper.find('th').map(node => node.text());
+    expect(texts).toEqual(['Name', 'Last name']);
+});
+
+it('Table find table rows', () => {
     const wrapper = setup();
 
     expect(wrapper.find('tr').length).toBe(2);
 });
 
-it('Table enzyme find table cell', () => {
+it('Table find table cell', () => {
     const wrapper = setup();
 
     expect(wrapper.find('td').length).toBe(2);
 });
 
-it('Table enzyme Check row values', () => {
+it('Table check row values', () => {
     const wrapper = setup();
 
     const texts = wrapper.find('td').map(node => node.text());
