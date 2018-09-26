@@ -1,0 +1,25 @@
+{
+  "tests": "./test/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Puppeteer": {
+      "url": "http://localhost:3000",
+      "browser": "chrome",
+      "show": true,
+      "restart": false,
+      "waitForAction": 500,
+      "windowSize": "1920x1080",
+      "chrome": {
+        "headless": false,
+        "args": ["--start-fullscreen"]
+      }
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "lab-1"
+}

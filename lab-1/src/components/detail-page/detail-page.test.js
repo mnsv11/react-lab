@@ -32,6 +32,11 @@ function setup() {
     return shallow(<DetailPage {...props}/>)
 }
 
+it('DetailPage find header h1', () => {
+    const wrapper = setup();
+
+    expect(wrapper.find('h1').text()).toEqual('User details');
+});
 
 it('DetailPage find inputs', () => {
     const wrapper = setup();
