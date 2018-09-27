@@ -82,3 +82,29 @@ Scenario('Validate errors and add user', async (I) => {
     I.see('078945612', 'tr');
 
 });
+
+Scenario('Edit user', async (I) => {
+    I.see('Kalle', 'tr');
+    I.click('//*[@id="root"]/div/div[2]/div[1]/div[1]/table/tbody/tr[2]/td[1]'); //Xpath
+    I.fillField({name: 'name'}, 'Johannes');
+    I.click('Save');
+    I.see('Johannes', 'tr');
+    I.dontSee('Kalle');
+});
+
+Scenario('Delete user', async (I) => {
+    I.see('Hansson', 'tr');
+    I.click('//*[@id="root"]/div/div[2]/div[1]/div[1]/table/tbody/tr[5]/td[1]'); //Xpath
+    I.click('Delete user');
+    I.dontSee('Hansson');
+});
+
+Scenario('Go to topic page', async (I) => {
+    I.click('Topics');
+    I.see('Topics');
+});
+
+Scenario('Go to about page', async (I) => {
+    I.click('About');
+    I.see('About');
+});
