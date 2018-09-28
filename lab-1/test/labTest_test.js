@@ -6,12 +6,13 @@ Before( async (I) => { // or Background
     I.amOnPage('/');
 });
 
-Scenario('check Welcome page on site', (I) => {
+Scenario('check Users page on site', (I) => {
     I.see('Users');
 });
 
 Scenario('Validate errors and add user', async (I) => {
     I.click('Add new user');
+    I.see('User details');
 
     I.fillField({name: 'name'}, 'A');
     I.fillField({name: 'last name'}, 'Ericsson');
@@ -99,12 +100,12 @@ Scenario('Delete user', async (I) => {
     I.dontSee('Hansson');
 });
 
-Scenario('Go to topic page', async (I) => {
+Scenario('Navigate to topic page', async (I) => {
     I.click('Topics');
     I.see('Topics');
 });
 
-Scenario('Go to about page', async (I) => {
+Scenario('Navigate to about page', async (I) => {
     I.click('About');
     I.see('About');
 });
