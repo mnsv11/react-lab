@@ -76,28 +76,24 @@ Scenario('Validate errors and add user', async (I) => {
     I.fillField({name: 'phone'}, '078945612');
     I.click('Save');
 
-    I.see('Simon', 'tr');
-    I.see('Ericsson', 'tr');
-    I.see('99', 'tr');
-    I.see('Male', 'tr');
-    I.see('078945612', 'tr');
+    I.see('Simon\tEricsson\t99\t078945612\tMale', 'tr');
 
 });
 
 Scenario('Edit user', async (I) => {
-    I.see('Kalle', 'tr');
+    I.see('Kalle\tSvensson\t34\t0703756214\tMale', 'tr');
     I.click('//*[@id="root"]/div/div[2]/div[1]/div[1]/table/tbody/tr[2]/td[1]'); //Xpath
     I.fillField({name: 'name'}, 'Johannes');
     I.click('Save');
-    I.see('Johannes', 'tr');
-    I.dontSee('Kalle');
+    I.see('Johannes\tSvensson\t34\t0703756214\tMale', 'tr');
+    I.dontSee('Kalle\tSvensson\t34\t0703756214\tMale');
 });
 
 Scenario('Delete user', async (I) => {
-    I.see('Hansson', 'tr');
+    I.see('Peter\tHansson\t41\t0703159856\tMale', 'tr');
     I.click('//*[@id="root"]/div/div[2]/div[1]/div[1]/table/tbody/tr[5]/td[1]'); //Xpath
     I.click('Delete user');
-    I.dontSee('Hansson');
+    I.dontSee('Peter\tHansson\t41\t0703159856\tMale');
 });
 
 Scenario('Navigate to topic page', async (I) => {
