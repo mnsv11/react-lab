@@ -4,7 +4,7 @@ import './routing.scss';
 import Users from '../components/users/users';
 import About from "../components/about/about"
 import PageNotFound from "../components/pageNotFound/pageNotFound"
-import Topics from "../components/topics/topics"
+import ChartPage from "../components/chartPage/chartPage"
 
 class Routing extends Component {
 
@@ -15,12 +15,12 @@ class Routing extends Component {
                 <div className="menu">
                     <div className="menu-links">
                         <MenuLink activeOnlyWhenExact={true} to="/" label="Users" />
-                        <MenuLink to="/topics" label="Topics" />
+                        <MenuLink to="/charts" label="Charts" />
                         <MenuLink to="/about" label="About" />
                     </div>
                     <div className="menu-route">
                         <Route exact path="/" component={Users} />
-                        <Route path="/topics" component={Topics} />
+                        <Route path="/charts" component={ChartPage} />
                         <Route path="/about" component={About} />
                         <Route component={PageNotFound} />
                     </div>
