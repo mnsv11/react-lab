@@ -51,6 +51,32 @@
       "city": "Stockholm",
       "zip": "10391",
       "country": "Sweden"
+    },
+    {
+      "id": 4,
+      "name": "Malin",
+      "last name": "Olsson",
+      "age": "9",
+      "phone": "07031534556",
+      "gender": "Female",
+      "street": "Drottninggatan",
+      "streetNumber": "11",
+      "city": "Karlskrona",
+      "zip": "37300",
+      "country": "Sweden"
+    },
+    {
+      "id": 5,
+      "name": "Gösta",
+      "last name": "Ingman",
+      "age": "103",
+      "phone": "07003534556",
+      "gender": "Male",
+      "street": "Drottninggatan",
+      "streetNumber": "11",
+      "city": "Karlskrona",
+      "zip": "37300",
+      "country": "Sweden"
     }
   ]
 }

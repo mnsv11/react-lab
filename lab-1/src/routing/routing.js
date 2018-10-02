@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './routing.scss';
 import Users from '../components/users/users';
 import About from "../components/about/about"
-import PageNotFound from "../components/pageNotFound/pageNotFound"
 import ChartPage from "../components/chartPage/chartPage"
 
 class Routing extends Component {
@@ -22,7 +21,6 @@ class Routing extends Component {
                         <Route exact path="/" component={Users} />
                         <Route path="/charts" component={ChartPage} />
                         <Route path="/about" component={About} />
-                        <Route component={PageNotFound} />
                     </div>
                 </div>
             </Router>
