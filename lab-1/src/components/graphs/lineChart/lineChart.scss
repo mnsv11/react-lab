@@ -7,3 +7,12 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+
+.tooltip {
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+  padding: 5px;
+  border-radius: 2px;
+}

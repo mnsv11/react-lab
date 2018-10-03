@@ -5,25 +5,36 @@ import PropTypes from 'prop-types';
 
 class PieChart extends Component {
 
+
     constructor(props){
         super(props);
-        this.createPieChart = this.createPieChart.bind(this)
+        this.state = {
+            data: props.data
+        };
+        this.createPieChart = this.createPieChart.bind(this);
     }
 
     componentDidUpdate() {
         this.createPieChart();
+
     }
 
+    componentDidMount() {
+        this.setState({
+            data: this.props.data
+        });
+    }
 
     render() {
         return (
-            <div id='content'/>
+            <div id='pieChart'/>
         );
     }
 
     createPieChart() {
-        let svg = d3.select('#content')
+        let svg = d3.select('#pieChart')
             .append( "svg")
+            .attr("class", "svg")
             .attr("width", 400)
             .attr("height", 400);
         let width = +svg.attr("width");
@@ -31,7 +42,7 @@ class PieChart extends Component {
         let radius = Math.min(width, height) / 2;
         let g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-        let color = d3.scaleOrdinal(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+        let color = d3.scaleOrdinal(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#ff5f08", "#DE050C", "#A80562", "#4308A8", "#4308A8"]);
 
         let pie = d3.pie()
             .sort(null)
@@ -50,7 +61,7 @@ class PieChart extends Component {
             .attr("class", "tooltip");
 
         let arc = g.selectAll(".arc")
-            .data(pie(this.props.data))
+            .data(pie(this.state.data))
             .enter().append("g")
             .attr("class", "arc")
             .on("mouseover", d =>{

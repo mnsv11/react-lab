@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "./chartPage.scss";
 import "../header/header"
 import Header from "../header/header";
@@ -41,8 +42,19 @@ class ChartPage extends Component {
             <div className="chartPage">
                 <Header title="Charts"/>
                 <div className='chartPage-content'>
-                    <PieChart data={this.state.data}/>
-                    <LineChart graphData={this.state.graphData}/>
+                    <Tabs>
+                        <TabList>
+                            <Tab>Pie chart</Tab>
+                            <Tab>Line chart</Tab>
+                        </TabList>
+
+                        <TabPanel>
+                            <PieChart data={this.state.data}/>
+                        </TabPanel>
+                        <TabPanel>
+                            <LineChart data={this.state.graphData}/>
+                        </TabPanel>
+                    </Tabs>
                 </div>
             </div>
         );
