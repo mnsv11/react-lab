@@ -5,8 +5,10 @@ import "../header/header"
 import Header from "../header/header";
 import PieChart from "../graphs/pieChart/pieChart";
 import LineChart from '../graphs/lineChart/lineChart';
+import BarChart from '../graphs/barChart/barChart';
 import UsersStore from "../../flux/stores/usersStore";
 import graphData from '../../assets/graphData.tsv';
+import barData from '../../assets/barData.tsv';
 
 class ChartPage extends Component {
 
@@ -15,7 +17,8 @@ class ChartPage extends Component {
 
         this.state = {
             users: UsersStore.getAllUsers(),
-            graphData:graphData,
+            graphData: graphData,
+            barData: barData,
             data: [
                 {age: '0-9', users: 0},
                 {age: '10-19', users: 0},
@@ -46,6 +49,7 @@ class ChartPage extends Component {
                         <TabList>
                             <Tab>Pie chart</Tab>
                             <Tab>Line chart</Tab>
+                            <Tab>Bar chart</Tab>
                         </TabList>
 
                         <TabPanel>
@@ -53,6 +57,9 @@ class ChartPage extends Component {
                         </TabPanel>
                         <TabPanel>
                             <LineChart data={this.state.graphData}/>
+                        </TabPanel>
+                        <TabPanel>
+                            <BarChart data={this.state.barData}/>
                         </TabPanel>
                     </Tabs>
                 </div>

@@ -3,8 +3,6 @@ import "./lineChart.scss";
 import * as d3 from 'd3';
 import PropTypes from 'prop-types';
 
-let created = false;
-
 class LineChart extends Component {
 
     constructor(props){
@@ -35,7 +33,6 @@ class LineChart extends Component {
     createLineChart() {
         let svg = d3.select("#lineChart")
             .append( "svg")
-            .attr("class", "svg")
             .attr("width", 1000)
             .attr("height", 500);
         let margin = {top: 20, right: 80, bottom: 30, left: 50};
