@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "value": "100",
+  "child": {
+    "name": "child1",
+    "value": "200",
+    "child": {
+      "name": "child2",
+      "value": "300"
+    }
+  }
+}

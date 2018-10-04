@@ -3,8 +3,17 @@ import "./pieChart.scss";
 import * as d3 from 'd3';
 import PropTypes from 'prop-types';
 
-class PieChart extends Component {
+/**
+ * @return {null}
+ */
+function ShowTotal(total) {
+    if(total.value > 0) {
+        return (<div>Total: {total.value}</div>)
+    }
+    return null;
+}
 
+class PieChart extends Component {
 
     constructor(props){
         super(props);
@@ -16,25 +25,26 @@ class PieChart extends Component {
 
     componentDidUpdate() {
         this.createPieChart();
-
     }
 
     componentDidMount() {
         this.setState({
-            data: this.props.data
+            data: this.props.data,
         });
     }
 
     render() {
         return (
-            <div id='pieChart'/>
+            <div>
+                <div id='pieChart'/>
+                <ShowTotal value={this.props.total}/>
+            </div>
         );
     }
 
     createPieChart() {
         let svg = d3.select('#pieChart')
             .append( "svg")
-            .attr("class", "svg")
             .attr("width", 400)
             .attr("height", 400);
         let width = +svg.attr("width");
@@ -91,12 +101,12 @@ class PieChart extends Component {
                     return d.data.age;
                 }
             });
-
     }
 }
 
 PieChart.propTypes = {
-    data: PropTypes.array.isRequired
+    data: PropTypes.array.isRequired,
+    total: PropTypes.number
 };
 
 export default PieChart;

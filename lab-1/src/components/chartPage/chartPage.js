@@ -14,9 +14,9 @@ class ChartPage extends Component {
 
     constructor(props){
         super(props);
-
         this.state = {
             users: UsersStore.getAllUsers(),
+            totalUsers: 0,
             graphData: graphData,
             barData: barData,
             data: [
@@ -40,7 +40,6 @@ class ChartPage extends Component {
     }
 
     render() {
-
         return (
             <div className="chartPage">
                 <Header title="Charts"/>
@@ -53,7 +52,7 @@ class ChartPage extends Component {
                         </TabList>
 
                         <TabPanel>
-                            <PieChart data={this.state.data}/>
+                            <PieChart data={this.state.data} total={this.state.totalUsers}/>
                         </TabPanel>
                         <TabPanel>
                             <LineChart data={this.state.graphData}/>
@@ -69,34 +68,47 @@ class ChartPage extends Component {
 
     createGraphData() {
         const state = this.state.data;
+        let totUsers = 0;
         this.state.users.forEach(user => {
             if (Number(user.age) < 10) {
                 state[0].users++;
+                totUsers++;
             } else if (Number(user.age) < 20) {
                 state[1].users++;
+                totUsers++;
             } else if (Number(user.age) < 30) {
                 state[2].users++;
+                totUsers++;
             } else if (Number(user.age) < 40) {
                 state[3].users++;
+                totUsers++;
             } else if (Number(user.age) < 50) {
                 state[4].users++;
+                totUsers++;
             } else if (Number(user.age) < 60) {
                 state[5].users++;
+                totUsers++;
             } else if (Number(user.age) < 70) {
                 state[6].users++;
+                totUsers++;
             } else if (Number(user.age) < 80) {
                 state[7].users++;
+                totUsers++;
             } else if (Number(user.age) < 90) {
                 state[8].users++;
+                totUsers++;
             } else if (Number(user.age) < 100) {
                 state[9].users++;
+                totUsers++;
             } else if (Number(user.age) > 99) {
                 state[10].users++;
+                totUsers++;
             }
         });
 
         this.setState({
-            data: state
+            data: state,
+            totalUsers: totUsers
         });
     }
 }
