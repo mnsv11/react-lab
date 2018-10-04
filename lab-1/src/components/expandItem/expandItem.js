@@ -9,6 +9,8 @@ class ExpandItem extends Component {
         this.state = {
             items: props.items
         };
+        this.maxheight = 0;
+        this.countChildren(props.items);
         this.setHeight = this.setHeight.bind(this);
     }
 
@@ -26,9 +28,16 @@ class ExpandItem extends Component {
 
     setHeight() {
         if (!this.refs.expandItem.style.maxHeight || this.refs.expandItem.style.maxHeight === '80px') {
-            this.refs.expandItem.style.maxHeight = "1000px";
+            this.refs.expandItem.style.maxHeight =  80 * this.maxheight + "px";
         } else {
             this.refs.expandItem.style.maxHeight = '80px';
+        }
+    }
+
+    countChildren(child) {
+        this.maxheight++;
+        if(child.child) {
+            this.countChildren(child.child);
         }
     }
 }

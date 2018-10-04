@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8859041-c7c8-444d-89e9-3202d869051e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/components/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/about/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/components/chartPage/chartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/chartPage/chartPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/components/graphs/pieChart/pieChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/graphs/pieChart/pieChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-1/src/routing/routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/routing/routing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +41,8 @@
           <entry key="gitignore" value="5" />
           <entry key="graphData" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="255" />
-          <entry key="json" value="32" />
+          <entry key="js" value="262" />
+          <entry key="json" value="33" />
           <entry key="main-page-scss" value="1" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
@@ -59,8 +57,8 @@
           <entry key="CSV" value="3" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="32" />
-          <entry key="JavaScript" value="255" />
+          <entry key="JSON" value="33" />
+          <entry key="JavaScript" value="262" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="RNG Compact" value="4" />
           <entry key="SCSS" value="62" />
@@ -71,9 +69,9 @@
         <counts>
           <entry key="css" value="67" />
           <entry key="gitignore" value="22" />
-          <entry key="js" value="19397" />
+          <entry key="js" value="19554" />
           <entry key="json" value="934" />
-          <entry key="scss" value="1421" />
+          <entry key="scss" value="1425" />
           <entry key="tsv" value="2" />
         </counts>
       </usages-collector>
@@ -81,9 +79,9 @@
         <counts>
           <entry key="CSS" value="67" />
           <entry key="JSON" value="934" />
-          <entry key="JavaScript" value="19397" />
+          <entry key="JavaScript" value="19554" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="SCSS" value="1421" />
+          <entry key="SCSS" value="1425" />
           <entry key="TSV" value="2" />
         </counts>
       </usages-collector>
@@ -94,11 +92,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="300">
+              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -109,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="45">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -127,35 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab-1/src/routing/routing.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab-1/src/components/about/about.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -261,12 +235,12 @@
         <option value="$PROJECT_DIR$/lab-1/src/components/table/table.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/about/about.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/assets/expandItems.json" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.scss" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.js" />
-        <option value="$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.scss" />
         <option value="$PROJECT_DIR$/lab-1/src/components/about/about.js" />
         <option value="$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.js" />
         <option value="$PROJECT_DIR$/lab-1/src/routing/routing.js" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.scss" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.scss" />
+        <option value="$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.js" />
       </list>
     </option>
   </component>
@@ -346,49 +320,39 @@
               <item name="React_1" type="462c0819:PsiDirectoryNode" />
               <item name="lab-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
+              <item name="flux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="React_1" type="462c0819:PsiDirectoryNode" />
               <item name="lab-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="expandPage" type="462c0819:PsiDirectoryNode" />
+              <item name="flux" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="React_1" type="462c0819:PsiDirectoryNode" />
               <item name="lab-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
+              <item name="flux" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="React_1" type="462c0819:PsiDirectoryNode" />
               <item name="lab-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
-              <item name="pieChart" type="462c0819:PsiDirectoryNode" />
+              <item name="flux" type="462c0819:PsiDirectoryNode" />
+              <item name="dispatcher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="React_1" type="462c0819:PsiDirectoryNode" />
               <item name="lab-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React_1" type="462c0819:PsiDirectoryNode" />
-              <item name="lab-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="flux" type="462c0819:PsiDirectoryNode" />
+              <item name="stores" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React_1" type="b2602c69:ProjectViewProjectNode" />
@@ -467,12 +431,12 @@
       <workItem from="1536748980496" duration="26543000" />
       <workItem from="1536842817948" duration="120109000" />
       <workItem from="1537947410957" duration="36667000" />
-      <workItem from="1538390916167" duration="55696000" />
+      <workItem from="1538390916167" duration="60649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328396000" />
+    <option name="totallyTimeSpent" value="333349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,22 +478,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lab-1/node_modules/enzyme/src/ShallowWrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2004">
-          <caret line="738" column="2" selection-start-line="738" selection-start-column="2" selection-end-line="738" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/table/table.OldTest.js" />
-    <entry file="file://$PROJECT_DIR$/lab-1/node_modules/react-addons-test-utils/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="965">
-          <caret line="72" column="3" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/labTest_test.js" />
     <entry file="file://$PROJECT_DIR$/lab-1/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -605,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/actions/usersActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/assets/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="739">
@@ -626,16 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/stores/usersStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,30 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/assets/expandItems.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/about/about.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -855,17 +759,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab-1/src/components/about/about.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/steps_file.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/routing/routing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -882,10 +792,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-1/src/routing/routing.js">
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandPage/expandPage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/dispatcher/dispatcher.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/actions/usersActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/constants/usersConstants.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/stores/usersStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/flux/actions/initializeData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/assets/expandItems.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-1/src/components/expandItem/expandItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
