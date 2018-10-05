@@ -20,3 +20,25 @@
     border-radius: 15px;
   }
 }
+
+
+.hamburger {
+  position: absolute;
+  left: 7px;
+  img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+}
+
+.dropDownMenu {
+  display: none;
+  position: absolute;
+  left: 6px;
+  top: 20px;
+  z-index: 10;
+  background-color: white;
+  border: solid 1px #d2d2d2;
+  padding: 2px 5px;
+}
