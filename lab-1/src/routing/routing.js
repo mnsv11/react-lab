@@ -20,7 +20,7 @@ class Routing extends Component {
             <Router>
                 <div className="menu">
                     <div className="menu-links">
-                        <div className='hamburger'>
+                        <div className='hamburger' onMouseLeave={this.hideMenu}>
                             <img src={menu} alt='' onMouseEnter={this.displayMenu}/>
                             {
                                 this.dropDownMenu()
@@ -53,7 +53,7 @@ class Routing extends Component {
 
     dropDownMenu() {
         return (
-            <div className='dropDownMenu' ref='dropDownMenu' onMouseLeave={this.hideMenu}>
+            <div className='dropDownMenu' ref='dropDownMenu'>
                 <MenuLink activeOnlyWhenExact={true} to="/" label="Users" />
                 <MenuLink to="/charts" label="Charts" />
                 <MenuLink to="/expandPage" label="ExpandPage" />
@@ -64,21 +64,7 @@ class Routing extends Component {
 
 }
 
-/*
-function DropDownMenu() {
-    return (
-        <div className='dropDownMenu'>
-            <MenuLink activeOnlyWhenExact={true} to="/" label="Users" />
-            <MenuLink to="/charts" label="Charts" />
-            <MenuLink to="/expandPage" label="ExpandPage" />
-            <MenuLink to="/about" label="About" />
-        </div>
-    )
-}
-*/
-
 export default Routing;
-
 
 const MenuLink = ({ label, to, activeOnlyWhenExact }) => (
     <Route
