@@ -12,6 +12,9 @@
       font-weight: bold;
     }
   }
+  &-route {
+    height: calc(100% - 40px);
+  }
   &-active {
     background-color: #dddddd;
   }

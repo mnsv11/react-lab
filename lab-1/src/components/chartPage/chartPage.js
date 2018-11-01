@@ -6,6 +6,7 @@ import Header from "../header/header";
 import PieChart from "../graphs/pieChart/pieChart";
 import LineChart from '../graphs/lineChart/lineChart';
 import BarChart from '../graphs/barChart/barChart';
+import Map from '../graphs/map/map';
 import UsersStore from "../../flux/stores/usersStore";
 import graphData from '../../assets/graphData.tsv';
 import barData from '../../assets/barData.tsv';
@@ -49,6 +50,7 @@ class ChartPage extends Component {
                             <Tab>Pie chart</Tab>
                             <Tab>Line chart</Tab>
                             <Tab>Bar chart</Tab>
+                            <Tab>Map</Tab>
                         </TabList>
 
                         <TabPanel>
@@ -59,6 +61,9 @@ class ChartPage extends Component {
                         </TabPanel>
                         <TabPanel>
                             <BarChart data={this.state.barData}/>
+                        </TabPanel>
+                        <TabPanel>
+                            <Map />
                         </TabPanel>
                     </Tabs>
                 </div>
